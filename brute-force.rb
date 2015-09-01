@@ -1,8 +1,7 @@
-# uses the Prime functionality--i could redo this building my own prime function
-# i could also use a seive to find prime numbers
 require "Prime"
 
 class ListPrimes
+  attr_reader :primes
 
 
   def initialize(limit)
@@ -28,6 +27,3 @@ end
 puts "enter limit"
 limit = gets.strip.to_i
 puts "answer: #{ListPrimes.new(limit).last_prime}"
-
-
-#refactor should use a sieve
